@@ -1,0 +1,22 @@
+Resources:
+  PrimaryDynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: createdAt
+          AttributeType: S
+        - AttributeName: id
+          AttributeType: S
+      KeySchema: # primary composite key
+        - AttributeName: id # partition key
+          KeyType: HASH
+        - AttributeName: createdAt # sort key
+          KeyType: RANGE
+      ProvisionedThroughput:
+        ReadCapacityUnits: ${self:provider.tableThroughput}
+        WriteCapacityUnits: ${self:provider.tableThroughput}
+      BillingMode: PROVISIONED
+      TableName: ${self:custom.resources.PRIMARY_TABLE}
+      TimeToLiveSpecification:
+        AttributeName: TimeToLive,
+        Enabled: True
