@@ -16,14 +16,17 @@ provider:
         - dynamodb:*
         - lambda:*
       Resource: "*"
+
 plugins:
   - serverless-appsync-plugin
+
 custom:
   resources:
     PRIMARY_TABLE: ${self:service}-dynamo-table-${self:provider.stage}
+
   appSync: # appsync plugin configuration
     name: ${self:service}-appsync-${self:provider.stage}
-    authenticationType: API_KEY # since we dont have user login for now
+    authenticationType: API_KEY # since we don't have user login for now
     dataSources:
       - type: AMAZON_DYNAMODB
         name: PrimaryTable
@@ -38,6 +41,26 @@ custom:
         field: createTodo
         request: "create_todo/request.vtl"
         response: "common-item-response.vtl"
+      - dataSource: PrimaryTable
+        type: Mutation
+        field: updateTodo
+        request: "update_todo/request.vtl"
+        response: "common-item-response.vtl"
+      - dataSource: PrimaryTable
+        type: Mutation
+        field: deleteTodo
+        request: "delete_todo/request.vtl"
+        response: "common-item-response.vtl"
+      - dataSource: PrimaryTable
+        type: Query
+        field: getTodo
+        request: "get_todo/request.vtl"
+        response: "common-item-response.vtl"
+      - dataSource: PrimaryTable
+        type: Query
+        field: listTodos
+        request: "list_todos/request.vtl"
+        response: "common-items-response.vtl"
 
 functions:
   hello:

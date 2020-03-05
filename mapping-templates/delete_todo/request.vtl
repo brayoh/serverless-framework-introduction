@@ -1,8 +1,8 @@
 {
     "version" : "2017-02-28",
-    "operation" : "PutItem",
+    "operation" : "DeleteItem",
     "key" : {
-        "id": $util.dynamodb.toDynamoDBJson($util.autoId()),
+        "id":  $util.dynamodb.toDynamoDBJson($ctx.args.id),
     },
     "attributeValues" : $util.dynamodb.toMapValuesJson($ctx.args)
 }
