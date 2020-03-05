@@ -53,12 +53,12 @@ custom:
         response: "common-item-response.vtl"
       - dataSource: PrimaryTable
         type: Query
-        field: getTodo
+        field: getToDo
         request: "get_todo/request.vtl"
         response: "common-item-response.vtl"
       - dataSource: PrimaryTable
         type: Query
-        field: listTodos
+        field: listToDos
         request: "list_todos/request.vtl"
         response: "common-items-response.vtl"
 
