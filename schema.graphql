@@ -1,14 +1,13 @@
 type ToDo {
-  createdAt: AWSDateTime!
-  id: ID!
-  updatedAt: AWSDateTime!
+  createdAt: AWSDateTime
+  id: ID
+  updatedAt: AWSDateTime
   description: String!
   completed: Boolean
   dueDate: AWSDateTime!
 }
 
 input ToDoCreateInput {
-  id: ID!
   description: String!
   dueDate: AWSDateTime!
 }
