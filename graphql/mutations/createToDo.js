@@ -1,11 +1,14 @@
+import gql from "graphql-tag";
 
-mutation createTodo($input: ToDoCreateInput! ) {
-  createTodo(input: $input) {
-    id
-    createdAt
-    updatedAt
-    completed
-    description
-    dueDate
+export default gql`
+  mutation createTodo($input: ToDoCreateInput!) {
+    createTodo(input: $input) {
+      id
+      createdAt
+      updatedAt
+      completed
+      description
+      dueDate
+    }
   }
-}
+`;

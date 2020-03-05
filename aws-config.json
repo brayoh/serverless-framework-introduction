@@ -1,8 +1,8 @@
 {
-  "GraphQlApiUrl": "https://xkxcu3kj4bcthegw46ojfny6bu.appsync-api.eu-west-1.amazonaws.com/graphql",
-  "GraphQlApiKeyDefault": "da2-seiv5xzr7fg3rapd5d6ow6dwaq",
-  "EnterpriseLogAccessIamRole": "arn:aws:iam::447069011376:role/serverless-introduction-d-EnterpriseLogAccessIamRo-1JE3N6NRTWJ4E",
-  "HelloLambdaFunctionQualifiedArn": "arn:aws:lambda:eu-west-1:447069011376:function:serverless-introduction-dev-hello:25",
-  "GraphQlApiId": "fyv5musndzgsljucsts3ieo4w4",
-  "ServerlessDeploymentBucketName": "serverless-introduction-serverlessdeploymentbuck-3yq9bbk8fwfo"
+  "GraphQlApiUrl": "https://hdsudeqkkrfjtpnu6c7oi47azu.appsync-api.eu-west-1.amazonaws.com/graphql",
+  "GraphQlApiKeyDefault": "da2-t2z57fsmljc6fgtb5kd2lvip7a",
+  "EnterpriseLogAccessIamRole": "arn:aws:iam::447069011376:role/serverless-introduction-u-EnterpriseLogAccessIamRo-1QV9C1UCHYEZN",
+  "HelloLambdaFunctionQualifiedArn": "arn:aws:lambda:eu-west-1:447069011376:function:serverless-introduction-uat-hello:1",
+  "GraphQlApiId": "3thxzk2rvfai3htkrkb3ytjd3q",
+  "ServerlessDeploymentBucketName": "serverless-introduction-serverlessdeploymentbuck-lfqj1gbybyjf"
 }
