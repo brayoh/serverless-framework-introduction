@@ -3,6 +3,5 @@
     "operation" : "DeleteItem",
     "key" : {
         "id":  $util.dynamodb.toDynamoDBJson($ctx.args.id),
-    },
-    "attributeValues" : $util.dynamodb.toMapValuesJson($ctx.args)
+    }
 }
