@@ -1,8 +1,0 @@
-{
-  "GraphQlApiUrl": "https://rk4o6dhferd7hil3wmojnqr5uu.appsync-api.eu-west-1.amazonaws.com/graphql",
-  "GraphQlApiKeyDefault": "da2-ouhyuyvmrfdb7nguuvvqchexj4",
-  "EnterpriseLogAccessIamRole": "arn:aws:iam::447069011376:role/serverless-introduction-d-EnterpriseLogAccessIamRo-1ADTT14N1LPYI",
-  "HelloLambdaFunctionQualifiedArn": "arn:aws:lambda:eu-west-1:447069011376:function:serverless-introduction-dev2-hello:2",
-  "GraphQlApiId": "zjgli4hrpnapbohhggijozq5x4",
-  "ServerlessDeploymentBucketName": "serverless-introduction-serverlessdeploymentbuck-hivifgroq5qi"
-}
